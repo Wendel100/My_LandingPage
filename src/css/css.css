@@ -3,9 +3,17 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-}body{
-    font-size: 100%;
-    background: linear-gradient(rgb(92, 0, 197),rgb(105, 105, 105),rgb(100, 96, 96));
+}
+@font-face {
+        font-family: 'roboto';
+        src: url('src/fontes/Roboto-Black') format('ttf')
+      }
+body{
+    
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 5%, rgba(202,54,255,1) 70%, rgb(0, 157, 189) 100%);
+    /* font-size: 100%;
+    background: linear-gradient(#020024,#d45dff,#007b94); */
 }
 .cabecalho{
     display: flex;
@@ -22,7 +30,7 @@
     gap: 32px;
 }
 .cabecalho-item{
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'roboto';
     color: rgb(255, 255, 255);
     font-weight: 400;
     font-size: 18px;
@@ -36,6 +44,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    font-family: "Roboto", sans-serif;
 }
 .conteudo-escrito{
 display: flex;
@@ -43,21 +52,21 @@ flex-direction: column;
 gap: 32px;
 }
 .conteudo-escrito-titulo{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'roboto';
     font-weight: 400;
     font-size: 40px;
     color: aliceblue;
 }
 .conteudo-escrito-botao{
     background-color:#dbd3c6;
-    width: 100px;
+    width: 200px;
     height: 30px;
     border:none;
     box-shadow: 4px 5px 4px rgb(49, 48, 48);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'roboto';
     font-weight: 400;
     font-size: 20px;
-    color: #000000;
+    color:white;
     border-radius: 6px;
 }
 .conteudo-principal-imagem{
@@ -74,6 +83,7 @@ gap: 32px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'roboto';
 }
 .conteudo-principal-secundario-titulo{
 border-top: 0.4px solid white;
@@ -82,7 +92,7 @@ font-size: 24px;
 margin-bottom: 16px;
 }
 .conteudo-principal-secundario-paragrafo{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 300;
     font-size: 18px;
     color: rgb(255, 255, 255);
@@ -101,4 +111,8 @@ margin-bottom: 16px;
 }
 .cabecalho-item:hover{
     background-color: #cbb2f3;
+}
+span{
+    color: aliceblue;
+    font-family:'roboto' ;
 }
