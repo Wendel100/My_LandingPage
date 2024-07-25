@@ -115,4 +115,7 @@ margin-bottom: 16px;
 span{
     color: aliceblue;
     font-family:'roboto' ;
+}.box{
+    text-align: justify;
+    margin-left: 340px;
 }
